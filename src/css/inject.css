@@ -1,0 +1,68 @@
+/* listToggle.js styles */
+
+/**
+ * List Toggle Buttons
+ */
+
+#list-toggle-buttons-start ~ .board-header-btn,
+.birds-eye-button {
+  padding-right: 7px;
+}
+
+#list-toggle-buttons-start ~ .board-header-btn[list-visible="false"] {
+  opacity: 0.5;
+}
+
+#list-toggle-buttons-start + .board-header-btn-divider {
+  display: none;
+}
+
+/**
+* Birds Eye View
+*/
+
+.birds-eye-button {
+  text-decoration: underline;
+}
+
+.birds-eye .list-card-details {
+  padding: 3px 3px 1px 6px;
+}
+
+.birds-eye .list-card {
+  margin-bottom: 5px;
+}
+
+.birds-eye .list-card-labels {
+  margin-top: -3px;
+  margin-bottom: 4px;
+}
+
+.birds-eye .card-label.mod-card-front {
+  border-radius: 0;
+  margin: 0;
+  height: 4px;
+}
+
+.birds-eye .badges {
+  margin-top: -3px;
+  margin-bottom: -3px;
+}
+
+.birds-eye .list-card-members .member {
+  width: 15px;
+  height: 15px;
+  background: none;
+  margin-bottom: 0;
+}
+
+.birds-eye .list-card-members .member-avatar {
+  width: 15px;
+  height: 15px;
+  top: -4px;
+  position: relative;
+}
+
+.birds-eye .badge {
+  margin-bottom: 0;
+}

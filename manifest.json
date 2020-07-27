@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "JustMyTrello",
+  "short_name": "JustMyTrello",
+  "version": "1.0.0",
+  "description": "Just view the cards that are assigned to you on Trello board",
+  "homepage_url": "https://github.com/HugeThoughts/JustMyTrello",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["https://trello.com/*", "storage"],
+  "web_accessible_resources": ["icons/filter-32.png"],
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["src/js/myCards.js", "src/js/listToggle.js"],
+      "css": ["src/css/inject.css"],
+      "all_frames": true
+    }
+  ]
+}
